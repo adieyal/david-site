@@ -1,2 +1,11 @@
-<h1>Some change</h1>
-<a href="another.html">Go to the second page</a>
+<html>
+    <head>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/htmx/1.7.0/htmx.min.js" defer></script>
+    </head>
+    <body>
+        <!-- have a button POST a click via AJAX -->
+        <button hx-get="/button_page.html" hx-swap="outerHTML">
+            Click Me
+        </button>
+    </body>
+</html>
